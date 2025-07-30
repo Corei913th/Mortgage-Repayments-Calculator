@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <title>@FredArt-Repayment-Calculator.dev</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                <p>Mortgage Calculator</p> 
+                <a href="#" id="Reset" class="Reset">Clear All</a>
+            </div><br>
+
+            <div class="amount">
+                <p>Mortgage amount</p><br>
+                <div class="box">
+                    <div class="extr">
+                        <span>£</span>
+                    </div>
+                    <input type="number" name="" id="mortgageAmount">
+                </div>
+                <span class="error"></span>
+                <br>
+                <div class="term-interest">
+                    <div class="term">   
+                        <p>Mortgage term</p><br>               
+                        <div class="box">
+                            <input type="number" name="" id="mortgageTerm">
+                            <div class="extr">
+                                <span>Years</span>
+                            </div>                        
+                        </div>
+                        <span class="error"></span>
+                        
+                    </div>
+                    <div class="interest">
+                        <p>Mortgage interest</p><br>                 
+                        <div class="box">
+                            <input type="number" name="" id="mortgageInterest">
+                            <div class="extr">
+                                <span>%</span>
+                            </div>                        
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                </div>
+
+                <div class="mortgage-type"><br>
+                    <span>Mortgage Type</span><br>
+                    <div class="Type-box">
+                        <div class="type">
+                            <input type="radio" name="type" id="Repayment">  <label for="Repayment">Repayment</label> 
+                          </div><br>
+                          <div class="type">
+                              <input type="radio" name="type" id="InterestOnly">  <label for="InterestOnly">Interest Only</label>
+                          </div>
+                    </div>
+                    <span class="error"></span>
+                    
+                </div>
+
+                <button class="BtnCalculate">
+                    Calculate Repayments
+                </button>
+                
+            </div>
+        </div>
+        <div class="right ">
+            <div class="header">
+                <span>Your results</span><br><br>
+                <p>Your results are shown below based on the information you provised. To adjust de result, edit the form and click "calculate repayments" again.</p>
+            <div class="payment-box">
+                <span>Yours monthly repayments</span>
+
+                <span class="monthlyReplayment">£ 0</span>
+
+                <hr class="bar">
+
+                <span>Total you'll repay over the terms </span>
+                <span class="totalAmount">£ 0</span>
+            </div>
+            
+            </div>
+        </div>
+        <div class="rightStart">
+            <div class="wrapper">
+                <img src="/assets/img/illustration-empty.svg" alt="">
+                <h2>Results shown here</h2>
+                <p>Complete the form and click "Calculate repayments" to see what your monthly repayments would be. </p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
